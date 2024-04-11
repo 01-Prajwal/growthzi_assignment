@@ -1,0 +1,90 @@
+.nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#ffd703;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.name{
+    font-size: 52px;
+    font-weight: bolder;
+}
+.name:first-child{
+    font-size: 4rem;
+}
+.title{
+    display: flex;
+    /* flex-direction: column;
+     */
+     justify-content: space-between;
+     width: 27vw;
+
+}
+.others{
+    display: flex;
+    justify-content: space-evenly;
+    width: 56%;
+    flex-wrap: wrap;
+
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.others>span:hover{
+    background-color: black;
+    color: #ffd703;
+    cursor: pointer;
+    transition: hover 2s;
+    transition-delay:2s ;
+}
+.second{
+    -webkit-text-stroke: 2px black; /* For Webkit-based browsers like Chrome and Safari */
+    text-stroke: 3px white; /* Standard property */
+    /* color: transparent; */
+    color: #ffd703;
+    font-size: 4rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .nav{
+        flex-direction: column;
+    }
+    .others{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .nav{
+        position: static;
+    }
+    .title{
+        width: 335px;
+    }
+    .second{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-device-width: 280px){
+    .nav{
+        flex-direction: column;
+    }
+    .others{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .nav{
+        position: static;
+    }
+    .title{
+        width: 335px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .second{
+        font-size: 3rem;
+    }
+}

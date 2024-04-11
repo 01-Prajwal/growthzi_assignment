@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:wght@300&family=Cedarville+Cursive&family=Comfortaa:wght@500&family=Cutive+Mono&family=Hind+Siliguri:wght@300&family=Lato&family=Montserrat:wght@100&family=Mulish:wght@200&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Outfit:wght@200&family=Pacifico&family=Playfair+Display&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:ital,wght@0,400;1,100&family=Rubik:ital,wght@0,300;1,400&family=Space+Mono&family=Syne:wght@800&family=Ubuntu&family=Unbounded:wght@800&family=Varela+Round&family=Whisper&display=swap');
+
+
+.slide-wrap{
+    margin-top: 40px;
+    h2{
+        font-family: "Whisper";
+        // text-align: center;
+        // color: black;
+        font-size: xx-large;
+        text-transform: capitalize;
+    }
+    button{
+        color: #ffd703;
+        width: 100px;
+        background: transparent;
+        border: 2px solid #ffd703;
+        font-size: 1rem;
+        font-weight: lighter;
+        height: 6vh;
+    }
+}
+img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+.caption{
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .img-container{
+        width: 0;
+    }
+    .img2{
+        height: 36vh;
+    width: 100%;
+    }
+    .tags{
+        margin-top: 20px;
+        width: 0;
+    }
+}
+@media only screen and  (max-device-width: 280px){
+    .img-container{
+        width: 0;
+    }
+    .img2{
+        height: 36vh;
+    width: 100%;
+    }
+    .tags{
+        margin-top: 20px;
+        width: 0;
+    }
+}
